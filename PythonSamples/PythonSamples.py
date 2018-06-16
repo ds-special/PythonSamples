@@ -1,13 +1,18 @@
-print ("I will now count my chickens:")
-print ("Hens", 25 + 30 / 6)
-print ("Roosters", 100 - 25* 3 % 4)
+import Pmf
+import matplotlib.pyplot as pyplot
+import myplot
 
-types_of_people = 10
-x = f"There are {types_of_people} types of people."
+def main(name, data_dir='.'):
+    hist = Pmf.MakeHistFromList([1, 2, 2, 3, 5])
+    print(hist.Freq(2))
 
-binary = "binary"
-do_not = "don't"
-y = f"Those who know {binary} and those who {do_not}."
+    myplot.Hist(hist)
+    myplot.Show()
 
-print(x)
-print(y)
+    #vals, freqs = hist.Render()
+    #rectangles = pyplot.bar(vals, freqs)
+    #pyplot.show()    
+
+if __name__ == '__main__':
+    import sys
+    main(*sys.argv)

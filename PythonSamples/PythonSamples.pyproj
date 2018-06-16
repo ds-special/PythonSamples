@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6e1a5250-f16a-42e9-a669-c17c8c3ae9c5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PythonSamples.py</StartupFile>
+    <StartupFile>relay.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="class_size.py" />
+    <Compile Include="conditional.py" />
+    <Compile Include="descriptive.py" />
+    <Compile Include="first.py" />
+    <Compile Include="myplot.py" />
+    <Compile Include="Pmf.py" />
     <Compile Include="PythonSamples.py" />
+    <Compile Include="relay.py" />
+    <Compile Include="risk.py" />
+    <Compile Include="survey.py" />
+    <Compile Include="thinkstats.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
